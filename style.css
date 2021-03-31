@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: lightgray;
+}
+
+.margin-top-30 {
+    margin-top: 30px;
+}
+
+.margin-top-10 {
+    margin-top: 10px;
+}
+
+.padding-left-15 {
+    padding-left: 15px;
+}
+
+.fruit > .box-item > .box-item-header > .box-item-type {
+    background-color: orange;
+
+}
+
+.vegetable > .box-item > .box-item-header > .box-item-type {
+    background-color: green;
+}
+.meat > .box-item > .box-item-header > .box-item-type {
+    background-color: red;
+}
+
+.item-filters > div, .item-filters > div > div, .item-filters > div > div > div {
+    display: flex;
+}
+
+.item-filters > div > div > div {
+    padding: 0px 10px;
+    border-radius: 16px;
+
+    color: white;
+}
+
+#fruit-filter-container {
+    background-color: orange;
+}
+
+#vegetable-filter-container {
+    background-color: green;
+}
+
+#meat-filter-container {
+    background-color: red;
+}
+
+.box {
+    color: black;
+}
+
+.box-item {
+    margin: 10px;
+    text-align: center;
+    border: 0px solid black;
+    background-color: gray;
+}
+
+.box-item-header {
+    margin-bottom: 5px;
+    padding-top: 5px;
+}
+
+.box-item-img {
+    background-color: white;
+    height: 90px;
+}
+
+.box-item-title {
+    font-size: large;
+    font-weight: 700;
+    text-align: left;
+}
+
+.box-item-type {
+    margin-top: 9px;
+    font-size: xx-small;
+    font-style: italic;
+    border-radius: 16px;
+    color: white;
+}
+
+.box-item-description {
+    font-size: smaller;
+    padding-bottom: 10px;
+}
+
+.hide {
+    display: none;
+}

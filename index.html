@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Douglas Brandname
+        </title>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+        <script type="text/javascript" src="data.json"></script>
+        <script type="text/javascript" src="logic.js"></script>
+
+    </head>
+    <link rel="stylesheet" href="style.css">
+    <body onload="load()">
+        <div class="row header">
+            <div id="brandheader" class="col-xs-12 col-sm-7 brand-name">
+                <h1 class="padding-left-15">Brandname</h1>
+            </div>
+            <div id="header-right-links" class="margin-top-30 col-xs-12 col-sm-5">
+                | <a href=#>Menu Item 1</a> |
+                <a href=#>Menu Item 1</a> |
+                <a href=#>Menu Item 2</a> |
+                <a href=#>Menu Item 3</a> |
+                <a href=#>Menu Item 4</a> |
+                <a href=#>Menu Item 5</a> |
+                <a href=#>Menu Item 6</a> |
+            </div>
+        </div>
+
+        <div class="row item-filters margin-top-30 padding-left-15">
+            <div class="col-xs-12">
+
+                filter:&nbsp;&nbsp;&nbsp;
+                <div>
+                    <div id="fruit-filter-container">
+                        <input checked type="checkbox" id="fruit" onclick="filter('fruit')" name="Fruit" value="fruit">
+                            &nbsp;&nbsp;&nbsp;
+                            <div class="filter-item">Fruit</div>
+                        </input>
+                    </div>
+                    &nbsp;&nbsp;&nbsp;
+
+                    <div id="vegetable-filter-container">
+                        <input checked type="checkbox" id="vegetable" onclick="filter('vegetable')" name="Vegetable" value="vegetable">
+                            &nbsp;&nbsp;&nbsp;
+                            <div class="filter-item">Vegetable</div>
+                        </input>
+                    </div>
+                    &nbsp;&nbsp;&nbsp;
+
+                    <div id="meat-filter-container">
+                        <input checked type="checkbox" id="meat" onclick="filter('meat')" name="Meat" value="meat">
+                            &nbsp;&nbsp;&nbsp;
+                            <div class="filter-item">Meat</div>
+                        </input>
+                    </div>
+                    &nbsp;&nbsp;&nbsp;
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="items" class="margin-top-10"></div>
+    </body>
+</html>
